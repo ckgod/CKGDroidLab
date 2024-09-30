@@ -23,3 +23,6 @@ rootProject.name = "CKGDroidLab"
 include(":app")
 include(":core:common")
 include(":core:model")
+include(":core:database")
+include(":core:network")
+include(":core:data")
