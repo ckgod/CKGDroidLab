@@ -1,5 +1,8 @@
+import app.ckg.androidlab.convention.CKGBuildType
+
 plugins {
     alias(libs.plugins.ckgdroidlab.android.application)
+    alias(libs.plugins.ckgdroidlab.android.application.flavor)
 }
 
 android {
@@ -17,8 +20,13 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             isMinifyEnabled = false
+            applicationIdSuffix = CKGBuildType.DEBUG.applicationIdSuffix
+        }
+        release {
+            isMinifyEnabled = true
+            applicationIdSuffix = CKGBuildType.RELEASE.applicationIdSuffix
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"

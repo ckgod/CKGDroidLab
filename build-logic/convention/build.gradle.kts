@@ -29,5 +29,9 @@ gradlePlugin {
             id = "ckgdroidlab.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
+        register("androidApplicationFlavor") {
+            id = "ckgdroidlab.android.application.flavor"
+            implementationClass = "AndroidApplicationFlavorsConventionPlugin"
+        }
     }
 }
