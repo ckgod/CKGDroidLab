@@ -22,3 +22,12 @@ dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.ksp.gradlePlugin)
 }
+
+gradlePlugin {
+    plugins {
+        register("androidApplication") {
+            id = "ckgdroidlab.android.application"
+            implementationClass = "AndroidApplicationConventionPlugin"
+        }
+    }
+}

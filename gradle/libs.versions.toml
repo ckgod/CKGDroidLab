@@ -1,5 +1,15 @@
 [versions]
+# Project versions
+applicationId = "app.ckg.androidlab"
+versionName = "1.0"
+versionCode = "1"
+minSdk = "26"
+targetSdk = "34"
+compileSdk = "34"
+
+# sdk versions
 androidGradlePlugin = "8.6.0"
+androidDesugarJdkLibs = "2.0.4"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -16,6 +26,7 @@ ksp = "2.0.20-1.0.25"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -44,3 +55,6 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+# Convention Plugin
+ckgdroidlab-android-application = { id = "ckgdroidlab.android.application" }
