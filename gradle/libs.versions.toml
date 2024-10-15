@@ -1,8 +1,5 @@
 [versions]
 # Project versions
-applicationId = "app.ckg.androidlab"
-versionName = "1.0"
-versionCode = "1"
 minSdk = "26"
 targetSdk = "34"
 compileSdk = "34"
