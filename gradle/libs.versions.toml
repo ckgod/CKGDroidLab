@@ -1,8 +1,5 @@
 [versions]
-# Project versions
-minSdk = "26"
 targetSdk = "34"
-compileSdk = "34"
 
 # sdk versions
 androidGradlePlugin = "8.6.0"
