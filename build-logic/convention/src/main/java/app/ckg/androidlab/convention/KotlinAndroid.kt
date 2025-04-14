@@ -36,7 +36,7 @@ internal fun Project.configureKotlinAndroid(
     commonExtension: CommonExtension<*, *, *, *, *, *>,
 ) {
     commonExtension.apply {
-        compileSdk = 34
+        compileSdk = 35
 
         defaultConfig {
             minSdk = 26
@@ -81,8 +81,6 @@ private inline fun <reified T : KotlinTopLevelExtension> Project.configureKotlin
  */
 internal fun Project.configureKotlinJvm() {
     extensions.configure<JavaPluginExtension> {
-        // Up to Java 11 APIs are available through desugaring
-        // https://developer.android.com/studio/write/java11-minimal-support-table
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }

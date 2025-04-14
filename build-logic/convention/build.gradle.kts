@@ -41,5 +41,9 @@ gradlePlugin {
             id = libs.plugins.ckgdroidlab.hilt.get().pluginId
             implementationClass = "HiltConventionPlugin"
         }
+        register("androidLibrary") {
+            id = libs.plugins.ckgdroidlab.android.library.get().pluginId
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
     }
 }
