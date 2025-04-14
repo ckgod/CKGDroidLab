@@ -26,16 +26,20 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "ckgdroidlab.android.application"
+            id = libs.plugins.ckgdroidlab.android.application.asProvider().get().pluginId
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidApplicationFlavor") {
-            id = "ckgdroidlab.android.application.flavor"
+            id = libs.plugins.ckgdroidlab.android.application.flavor.get().pluginId
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
         }
         register("jvmLibrary") {
             id = libs.plugins.ckgdroidlab.jvm.library.get().pluginId
             implementationClass = "JvmLibraryConventionPlugin"
+        }
+        register("hilt") {
+            id = libs.plugins.ckgdroidlab.hilt.get().pluginId
+            implementationClass = "HiltConventionPlugin"
         }
     }
 }

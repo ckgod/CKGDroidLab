@@ -19,6 +19,8 @@ composeBom = "2024.09.02"
 appcompat = "1.7.0"
 material = "1.10.0"
 jetbrainsKotlinJvm = "1.9.0"
+hilt = "2.56"
+hiltExt = "1.2.0"
 
 
 [libraries]
@@ -49,6 +51,13 @@ kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-guava", version.ref = "kotlinxCoroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+hilt-core = { group = "com.google.dagger", name = "hilt-core", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+
 # Dependencies of the included build-logic
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
@@ -61,8 +70,10 @@ android-library = { id = "com.android.library", version.ref = "androidGradlePlug
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
 # Convention Plugin
 ckgdroidlab-android-application = { id = "ckgdroidlab.android.application" }
 ckgdroidlab-android-application-flavor = { id = "ckgdroidlab.android.application.flavor" }
 ckgdroidlab-jvm-library = { id = "ckgdroidlab.jvm.library" }
+ckgdroidlab-hilt = { id = "ckgdrodlab.hilt" }
