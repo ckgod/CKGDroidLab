@@ -53,3 +53,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 # Convention Plugin
 ckgdroidlab-android-application = { id = "ckgdroidlab.android.application" }
 ckgdroidlab-android-application-flavor = { id = "ckgdroidlab.android.application.flavor" }
+ckgdroidlab-jvm-library = { id = "ckgdroidlab.jvm.library" }

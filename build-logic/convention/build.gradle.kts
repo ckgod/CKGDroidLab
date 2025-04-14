@@ -33,5 +33,9 @@ gradlePlugin {
             id = "ckgdroidlab.android.application.flavor"
             implementationClass = "AndroidApplicationFlavorsConventionPlugin"
         }
+        register("jvmLibrary") {
+            id = libs.plugins.ckgdroidlab.jvm.library.get().pluginId
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
     }
 }
